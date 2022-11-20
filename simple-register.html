@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="confirmed.html">
+      <h1> Create an account</h1>
+      <!-- HW6: group inputs/selects -> fieldset
+      -first section: personal data
+      -second section: course selection 
+      -->
+      <fieldset>
+        <legend>Personal Data</legend>
+      Your full name: <input type="text" required/> <br/>
+      Your phone num.: <input type="text" required/> 
+      </fieldset>
+      <br/>
+      Choose the training program: 
+      <br/>
+      
+      <fieldset>
+        <legend>Course selection</legend>
+          <select>
+            <option>HTML Basics Course</option>
+            <option>CSS Basics Course</option>
+          </select>
+      <br/>
+      Choose the study hour:
+      <br/>
+      <!-- HW5: group options  in select (html5) -> morning/evening-->
+          <select>
+            <optgroup label="Morning">
+              <option>09:00</option>
+              <option>10:00</option>
+            </optgroup>
+            <optgroup label="Evening">
+              <option>19:00</option>
+              <option>20:00</option>
+            </optgroup>
+          </select>
+      </fieldset>
+  
+      <hr/>
+      
+      <label class="container"> I accept the <a href="terms.html" target="_blank" >terms</a>  and conditions
+        <input type="checkbox" required>
+        <span class="checkmark"></span>
+      </label>
+      <br/>
+      <br/>
+      <button>APPLY</button>
+      
+    </form>
+
+    
+  </body>
+</html>
+
+<!--
+  HW1 : ADD a checkbox input [] "I accept the terms and conditions"
+  HW2: make it required, fullname, phone
+  HW3: I accept the terms and conditions, the word "terms" -> <a> -> terms.html (h1+ html lists)
+  HW4: <a> -> find and use attribute -> open in new tab
+  HW5: group options  in select (html5) -> morning/evening
+  HW6: group inputs/selects -> fieldset
+      -first section: personal data
+      -second section: course selection
+  HW7: move the form -> table ( hint: the table hierarchy must be respected)
+
+
+-->
